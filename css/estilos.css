@@ -1,0 +1,30 @@
+
+#Homer{
+    background: rgb(97, 3, 3);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    margin: 30px;
+    background-color: #5f09e9;
+    color: #fffcfc;
+}
+h1, h2 {
+    color:violet;
+}
+
+.p{
+    font-size: large;
+    color: yellow;
+    background-color: rgb(11, 207, 17);
+}
+
+#parrafada{
+    background-color: black;
+
+}
+
+
+
