@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viajes Aventureros</title>
+  <style>
+    /* Reset básico y configuración general */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(120deg, #1e5799, #207cca, #2989d8);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Navegación */
+    nav {
+      background-color: #2c3e50;
+      padding: 0.8rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3498db;
+    }
+
+    /* Layout principal */
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      padding: 2rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Artículos */
+    article {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    article h2 {
+      color: #2980b9;
+      margin-bottom: 0.5rem;
+    }
+
+    article time {
+      display: block;
+      color: #7f8c8d;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    article img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+
+    article figcaption {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.3rem;
+    }
+
+    /* Barra lateral */
+    aside {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      align-self: start;
+    }
+
+    aside h3 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #ecf0f1;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside li {
+      margin-bottom: 0.6rem;
+    }
+
+    aside a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0.4rem 0;
+    }
+
+    footer a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+
+      nav ul {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌍 Viajes Aventureros</h1>
+    <p>Descubre el mundo, un paso a la vez</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#destinos">Destinos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <article>
+        <h2>Islas Galápagos: Un paraíso natural</h2>
+        <time datetime="2025-06-15">15 de junio de 2025</time>
+        <figure>
+          <img src="https://via.placeholder.com/600x300?text=Galápagos" alt="Paisaje de las Islas Galápagos">
+          <figcaption>Tortugas gigantes en su hábitat natural</figcaption>
+        </figure>
+        <p>Las Islas Galápagos son un archipiélago volcánico ubicado a 1,000 km de la costa de Ecuador. Famosas por su biodiversidad única, inspiraron a Charles Darwin en su teoría de la evolución.</p>
+      </article>
+
+      <article>
+        <h2>Montañas de Nepal: Camino al Everest</h2>
+        <time datetime="2025-05-22">22 de mayo de 2025</time>
+        <figure>
+          <img src="https://via.placeholder.com/600x300?text=Nepal+Everest" alt="Vista de las montañas del Himalaya">
+          <figcaption>Sendero hacia el campo base del Everest</figcaption>
+        </figure>
+        <p>El trekking al campo base del Everest es una de las experiencias más desafiantes y gratificantes para cualquier amante de la montaña. A más de 5,000 metros sobre el nivel del mar, cada paso es una victoria.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Sobre mí</h3>
+      <p>Soy Ana, viajera apasionada desde 2018. He visitado más de 30 países y comparto mis aventuras para inspirarte a salir de tu zona de confort.</p>
+
+      <h3>Redes sociales</h3>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+
+      <h3>Destinos populares</h3>
+      <ul>
+        <li><a href="#">Japón</a></li>
+        <li><a href="#">Islandia</a></li>
+        <li><a href="#">Nueva Zelanda</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Viajes Aventureros. Todos los derechos reservados.</p>
+    <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+  </footer>
+
+</body>
+</html>
