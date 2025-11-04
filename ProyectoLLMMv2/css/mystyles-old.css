@@ -1,0 +1,512 @@
+/* ===========================
+   RESET Y ESTILOS GENERALES
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ===========================
+   TIPOGRAFÍA
+=========================== */
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+em {
+    font-style: italic;
+    color: #555;
+}
+
+/* ===========================
+   MODELO DE CAJA
+=========================== */
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   CABECERA (HEADER)
+=========================== */
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3498db;
+    margin: 0;
+}
+
+/* ===========================
+   NAVEGACIÓN
+=========================== */
+
+nav {
+    background-color: transparent;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+nav a.activo {
+    background-color: #3498db;
+}
+
+/* ===========================
+   CONTENIDO PRINCIPAL
+=========================== */
+
+main {
+    margin-top: 40px;
+}
+
+/* Layout Flexbox para contenido de dos columnas */
+.contenido-flexbox {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.columna-texto {
+    flex: 2;
+}
+
+.columna-imagen {
+    flex: 1;
+}
+
+.columna-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================
+   HABILIDADES (GRID)
+=========================== */
+
+.grid-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.tarjeta-habilidad {
+    background-color: #ecf0f1;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-habilidad:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-habilidad img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-habilidad h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+/* ===========================
+   LISTAS
+=========================== */
+
+ul {
+    list-style: disc;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.lista-servicios {
+    counter-reset: servicio-counter;
+    list-style: none;
+    margin-left: 0;
+}
+
+.lista-servicios li {
+    counter-increment: servicio-counter;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    position: relative;
+}
+
+.lista-servicios li::before {
+    content: counter(servicio-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #3498db;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.lista-servicios h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   TABLAS
+=========================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===========================
+   ASIDE
+=========================== */
+
+aside.caja-llamada-accion {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+aside.caja-llamada-accion h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+aside.caja-llamada-accion p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* ===========================
+   BOTONES
+=========================== */
+
+.boton-primario {
+    display: inline-block;
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-primario:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-flotante .icono {
+  width: 30px;
+  height: 30px;
+}
+
+/* Tooltip */
+.boton-flotante::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 75px; /* separación vertical */
+  right: 50%;
+  transform: translateX(50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.boton-flotante:hover::after {
+  opacity: 1;
+}
+
+/* ===========================
+   PIE DE PÁGINA (FOOTER)
+=========================== */
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-seccion {
+    flex: 1;
+}
+
+.footer-seccion h4 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-seccion p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.footer-seccion ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-seccion ul li {
+    margin-bottom: 8px;
+}
+
+.footer-seccion a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-seccion a:hover {
+    color: #3498db;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+    color: #95a5a6;
+}
+
+.footer-copyright p {
+    margin-bottom: 5px;
+}
+
+/* ===========================
+   IMÁGENES
+=========================== */
+
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+/* ===========================
+   COLORES Y FONDOS
+=========================== */
+
+.fondo-azul {
+    background-color: #3498db;
+    color: white;
+}
+
+.fondo-gris {
+    background-color: #ecf0f1;
+}
+
+/* ===========================
+   RESPONSIVE (MÓVILES)
+=========================== */
+
+@media (max-width: 768px) {
+    /* Navegación en móviles */
+    header .contenedor {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    /* Contenido flexbox en móviles */
+    .contenido-flexbox {
+        flex-direction: column;
+    }
+    
+    /* Grid de habilidades en móviles */
+    .grid-habilidades {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer en móviles */
+    .footer-contenido {
+        flex-direction: column;
+    }
+    
+    /* Tablas en móviles */
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+}
