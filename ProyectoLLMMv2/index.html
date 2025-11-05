@@ -4,60 +4,38 @@
     <!-- ===========================
          METADATOS BÁSICOS
     =========================== -->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio personal de Santiago Pérez - Diseñador web y fotógrafo">
     <meta name="keywords" content="portfolio, diseño web, fotografía, desarrollo, HTML, CSS">
     <meta name="author" content="Santiago Pérez">
+
+    <link rel="icon" type="image/x-icon" href="iconos/logo_sn.png">
     
     <title>Portfolio de Sembei Norimaki - Inicio</title>
     
     <!-- ===========================
          ESTILOS CSS EXTERNOS
     =========================== -->
+    
     <link rel="stylesheet" href="css/mystyles.css">
     
-    <!-- ===========================
-         ESTILOS A NIVEL DE PÁGINA
-    =========================== -->
-    <style>
-        /* Estilos específicos solo para la página de inicio */
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: white;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .destacado {
-            background-color: #f39c12;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-    </style>
 </head>
+
 <body>
     
     <!-- ===========================
          CABECERA DE LA PÁGINA
     =========================== -->
+    
     <header>
         <div class="contenedor">
-            <h2 class="logo">SPC Portfolio</h2>
+            <div class="logoSN">
+            <img id="logoSN" src="iconos/logo_sn.png" alt="Logo iniciales SN">
+            </div>
+            <h2 class="nombrePortfolio">SN Portfolio</h2>
+        </div>
             
             <!-- ===========================
                  NAVEGACIÓN PRINCIPAL
@@ -76,6 +54,7 @@
     <!-- ===========================
          SECCIÓN HERO (BIENVENIDA)
     =========================== -->
+    
     <section class="hero">
         <h1>Bienvenido a mi Portfolio</h1>
         <p>Soy Sembei Norimaki, programador y diseñador web, apasionado por las nuevas tecnolgías</p>
@@ -84,6 +63,7 @@
     <!-- ===========================
          CONTENIDO PRINCIPAL
     =========================== -->
+    
     <main class="contenedor">
         
         <!-- Sección Sobre Mí -->
@@ -93,7 +73,7 @@
                 <div class="columna-texto">
                     <p>Desde hace más de 5 años me dedico al <strong>diseño y desarrollo web</strong>, creando sitios que combinan estética y funcionalidad. Mi enfoque está en la experiencia del usuario y en crear interfaces intuitivas.</p>
                     
-                    <p>Además del desarrollo web, la <em>programción</em> es mi otra gran pasión. Me he especializo en el desarrollo con distintos lenguajes de programación y frameworks actuales .</p>
+                    <p>Además del desarrollo web, la <em>programación</em> es mi otra gran pasión. Me he especializo en el desarrollo con distintos lenguajes de programación y frameworks actuales .</p>
                     
                     <div class="destacado">
                         <h3>¿Por qué elegirme?</h3>
@@ -113,10 +93,13 @@
         </section>
         
         <!-- Sección Habilidades -->
+        
         <section id="habilidades">
+            
             <h2>Mis Habilidades</h2>
             
             <div class="grid-habilidades">
+                
                 <!-- Tarjeta HTML -->
                 <article class="tarjeta-habilidad">
                     <img src="iconos/HTML5_logo.png" alt="Logo de HTML5">
@@ -132,6 +115,7 @@
                 </article>
                 
                 <!-- Tarjeta Java -->
+
                 <article class="tarjeta-habilidad">
                     <img src="iconos/Java-logo.png" alt="Logo de Java">
                     <h3>JAVA</h3>
@@ -139,6 +123,7 @@
                 </article>
 
                 <!-- Tarjeta JavaScript -->
+
                 <article class="tarjeta-habilidad">
                     <img src="iconos/JavaScript-logo.png" alt="Logo de JavaScript">
                     <h3>Javascript</h3>
@@ -146,6 +131,7 @@
                 </article>
 
                 <!-- Tarjeta Python -->
+
                 <article class="tarjeta-habilidad">
                     <img src="iconos/Python-logo.png" alt="Logo de Python">
                     <h3>Python</h3>
@@ -153,6 +139,7 @@
                 </article>                                 
 
                 <!-- Tarjeta Rust -->
+
                 <article class="tarjeta-habilidad">
                     <img src="iconos/RUST_logo.png" alt="Logo del lenguaje Rust">
                     <h3>Rust</h3>
@@ -163,6 +150,7 @@
         </section>
         
         <!-- Sección Estadísticas -->
+        
         <section id="estadisticas">
             <h2>Experiencia en Números</h2>
             
@@ -177,17 +165,13 @@
                 <tbody>
                     <tr>
                         <td>Proyectos Web</td>
-                        <td>52</td>
+                        <td>45</td>
                         <td>5 años</td>
                     </tr>
-                    <tr>
-                        <td>Sesiones Fotográficas</td>
-                        <td>140</td>
-                        <td>7 años</td>
-                    </tr>
+ 
                     <tr>
                         <td>Clientes Satisfechos</td>
-                        <td>48</td>
+                        <td>38</td>
                         <td>5 años</td>
                     </tr>
                     <tr>
@@ -200,10 +184,13 @@
         </section>
         
         <!-- Sección Servicios -->
+
         <section id="servicios">
+
             <h2>Servicios que Ofrezco</h2>
             
             <ol class="lista-servicios">
+
                 <li>
                     <h3>Diseño Web Personalizado</h3>
                     <p>Creación de sitios web únicos adaptados a tu marca y necesidades específicas.</p>
@@ -213,21 +200,26 @@
                     <p>Implementación de diseños con HTML5, CSS3 y JavaScript, garantizando compatibilidad cross-browser.</p>
                 </li>
                 <li>
-                    <h3>Fotografía Profesional</h3>
-                    <p>Sesiones fotográficas para eventos, productos, retratos corporativos y más.</p>
-                </li>
-                <li>
                     <h3>Optimización SEO</h3>
                     <p>Mejora del posicionamiento en buscadores para aumentar tu visibilidad online.</p>
                 </li>
+                              <li>
+                    <h3>Creación de apps Android</h3>
+                    <p>Diseño, implantación y mantenimiento de apps para Android.</p>
+                </li>
+
             </ol>
+
         </section>
         
         <!-- Sección Aside (contenido complementario) -->
+
         <aside class="caja-llamada-accion">
+
             <h3>¿Listo para trabajar juntos?</h3>
             <p>Cuéntame sobre tu proyecto y hagamos realidad tus ideas</p>
             <a href="contacto.html" class="boton-primario">Contactar Ahora</a>
+        
         </aside>
         
     </main>
@@ -235,36 +227,49 @@
     <!-- ===========================
          PIE DE PÁGINA
     =========================== -->
+
     <footer>
+
         <div class="contenedor">
+
             <div class="footer-contenido">
+
                 <div class="footer-seccion">
+
                     <h4>Sobre Este Sitio</h4>
                     <p>Portfolio personal desarrollado con HTML5 y CSS3 como parte del proyecto académico.</p>
                 </div>
+
                 
                 <div class="footer-seccion">
+
                     <h4>Enlaces Rápidos</h4>
+
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="galeria.html">Galería</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
+
                 </div>
                 
                 <div class="footer-seccion">
+
                     <h4>Contacto</h4>
-                    <p>Email: santi.perez@email.com</p>
-                    <p>Teléfono: +34 600 123 456</p>
+                    <p>Email: sembei.normaki@slump.com</p>
+                    <p>Teléfono: +34 666 123 456</p>
                     <p>Vigo, España</p>
+
                 </div>
+
             </div>
             
             <div class="footer-copyright">
-                <p>&copy; 2025 Santiago Pérez Portfolio. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Sembei Norimaki Portfolio. Todos los derechos reservados.</p>
                 <p>Desarrollado con HTML5 y CSS3</p>
             </div>
         </div>
+
     </footer>
     
         <a class="boton-flotante" title="Documentación del Proyecto" href="documentacion.html" >
@@ -272,4 +277,5 @@
         </a>
 
 </body>
+
 </html>
