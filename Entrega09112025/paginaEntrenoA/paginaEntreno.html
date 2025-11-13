@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Página de entreno</title>
+	<link rel="stylesheet" href="css/mystyles.css">
+</head>
+
+
+<body>
+
+<header>
+	<h1>MI PÁGINA DE PRÁCTICA HTML5</h1>
+	<p>Un ejemplo de los elemntos más comunes de HTML y CSS</p>
+</header>
+
+<nav>
+	<ul class="ulNav">
+		<li><a href="index.hmtl"></a>Inicio</li>
+		<li><a href="galeria.html"></a>Galería</li>
+		<li><a href="#contacto"></a>Contacto</li>
+		<li><a href="repositorio.git"></a>Github</li>
+
+	</ul>
+
+</nav>
+
+<section>
+	<h3>Bienvenido</h3>
+	<p>Esta página incluye etiquetas semánticas, formularios, tablas, listas, imágenes y más.</p>
+	<h3>Lista de habilidades</h3>
+	<ul type="circle">
+		<li>HTML5</li>
+		<li>CSS3</li>	
+		<li>JavaScript(próximamente)</li>	
+	</ul>
+	<h3>Pasos para aprender web</h3>
+	<ol>
+		<li>Aprender HTML</li>
+		<li>Aprender CSS</li>	
+		<li>Practicar con proyectos reales</li>	
+	</ol>
+
+</section>
+
+<main>
+	<h3>Sobre mí:</h3>
+	<div class="galeria">
+		<img src="img/imagen.png" alt="FotoMeme">
+	<table>
+		<caption><h3>Tabla de datos de ejemplo</h3></caption>
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Edad</th>
+					<th>Ocupacion</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Ana</td>
+					<td>28</td>
+					<td>Diseñadora</td>
+				</tr>
+				<tr>
+					<td>Luis</td>
+					<td>34</td>
+					<td>Desarrollador</td>
+				</tr>
+			</tbody>
+
+	
+	
+	
+	</table>
+	
+	</div>
+
+</main>
+
+<aside></aside>
+
+<section>
+	<h3>Contenido adicional</h3>
+	<div>
+		<p>Este es un bloque</p>
+		<p>, ideal para contenido relacionado o complementario</p>
+	</div>
+
+</section>
+
+
+<section>
+	<form action="/formulario contacto" method="POST">
+	
+		<div>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre_usuario" name="nombre" required>
+		</div>
+		<div>
+			<label for="correo">Correo electónico:</label>
+			<input type="text" id="email" name="email" required>
+		</div>
+		
+		<div>
+			<label for="género">Género:</label>
+			
+			<select id="genero_usuario" name="genero">
+			
+				<option value="" disabled selected> Seleccionar </option>
+				<option value="mujer">Mujer</option>
+				<option value="hombre">Hombre</option>
+				<option value="otro">Otro</option>
+				
+			</select>
+				
+		</div>
+		
+		<div>
+			
+			<label for="mensaje">Mensaje:</label><br>
+			
+			<textarea
+				id="mensaje_usuario"
+				name="mensaje"
+				rows="6"
+				cols="50"
+				placeholder="Escriba aquí su mensaje..."
+				></textarea>
+			
+		</div>
+		
+		<div>
+		
+			<input type="submit" value="Enviar">
+			
+		</div>
+	
+
+	</form>
+
+
+</section>
+
+<footer>2025 Mi Página de Práctica. Todos los derechos reservados.</footer>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

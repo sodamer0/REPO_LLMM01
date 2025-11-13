@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+
+    <!-- ===========================
+         METADATOS BÁSICOS
+    =========================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentación técnica del proyecto Portfolio Juan García">
+    <meta name="keywords" content="documentación, proyecto, HTML5, CSS3, desarrollo web">
+    <meta name="author" content="Santiago Pérez">
+    
+    <title>Documentación - Portfolio Sembei Norimaki</title>
+    
+
+    <!-- ===========================
+         ESTILOS CSS EXTERNOS
+    =========================== -->
+
+    <link rel="stylesheet" href="css/mystyles.css">
+    
+</head>
+<body>
+    
+    <!-- ===========================
+         CABECERA DE LA PÁGINA
+    =========================== -->
+
+    <header>
+
+        <div class="contenedor">
+            <h2 class="logo">SN Portfolio</h2>
+            
+
+    <!-- ===========================
+        NAVEGACIÓN PRINCIPAL
+    =========================== -->
+
+            <nav>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pagina2.html">Galería</a></li>
+                    <li><a href="pagina3.html">Contacto</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    
+    <!-- ===========================
+         SECCIÓN HERO
+    =========================== -->
+
+    <section class="hero-documentacion">
+
+        <span class="etiqueta-version">Versión 1.5</span>
+        <h1>Documentación del Proyecto</h1>
+        <p>Memoria técnica y diario de trabajo</p>
+
+    </section>
+    
+
+    <!-- ===========================
+         CONTENIDO PRINCIPAL
+    =========================== -->
+
+    <main class="contenedor">
+        
+        <!-- Sección 1: Información del Proyecto -->
+
+        <section id="informacion-proyecto">
+
+            <h2>1. Información del Proyecto</h2>
+            
+            <div class="tabla-info">
+
+                <table>
+
+                    <tbody>
+
+                        <tr>
+                            <td><strong>Título del Proyecto:</strong></td>
+                            <td>Portfolio Personal - Sembei Norimaki</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Autor:</strong></td>
+                            <td>Santiago Pérez</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fecha de Inicio:</strong></td>
+                            <td>29 de octubre de 2025</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fecha de Finalización:</strong></td>
+                            <td>9 de noviembre de 2025</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Módulo:</strong></td>
+                            <td>Lenguajes de Marcas y Sistemas de Gestión de Información</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Curso:</strong></td>
+                            <td>1º DAW - Desarrollo de Aplicaciones Web - Modalidad Dual - Curso 2025/2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Profesor:</strong></td>
+                            <td>Marco Bartolomeu Solveira</td>
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+        
+        <!-- Sección 2: Descripción del Proyecto -->
+
+        <section id="descripcion-proyecto">
+
+            <h2>2. Descripción del Proyecto</h2>
+            
+            <h3>2.1. Temática Elegida</h3>
+            <p>Se ha desarrollado un <strong>portfolio personal</strong> para un profesional del diseño web y la programación en general. Esta temática fue seleccionada porque permite demostrar de manera práctica todos los conceptos aprendidos en HTML5 y CSS3, incluyendo estructura semántica y creación de formularios.</p>
+            
+            <h3>2.2. Justificación</h3>
+
+            <p>Un portfolio es una herramienta fundamental para cualquier profesional del sector tecnológico. Permite mostrar habilidades, proyectos y experiencia de forma visual y accesible. Además, este tipo de sitio web requiere implementar diversos elementos que demuestran el manejo de HTML5 Y CSS3.</p>
+            
+            <h3>2.3. Objetivos Específicos</h3>
+            <ul>
+                <li>Crear una estructura HTML5 semántica y accesible</li>
+                <li>Implementar un diseño responsive que funcione en diferentes dispositivos</li>
+                <li>Aplicar el modelo de caja de CSS de forma efectiva</li>
+                <li>Desarrollar un formulario de contacto funcional y completo</li>
+                <li>Utilizar layouts modernos con Flexbox y Grid</li>
+                <li>Mantener código limpio, comentado y bien organizado</li>
+            </ul>
+            
+            <h3>2.4. Público Objetivo</h3>
+
+            <p>El sitio está dirigido a:</p>
+
+            <ul>
+                <li>Potenciales clientes que buscan servicios de diseño web</li>
+                <li>Empresas que necesitan contratar desarrolladores frontend</li>
+                <li>Empresas que necesitan contatar programadores backend</li>
+                <li>Reclutadores técnicos del sector IT</li>
+            </ul>
+
+        </section>
+        
+        <!-- Sección 3: Decisiones de Diseño -->
+
+        <section id="decisiones-diseno">
+            <h2>3. Decisiones de Diseño</h2>
+            
+            <h3>3.1. Paleta de Colores</h3>
+            <div class="paleta-colores">
+                <article class="color-item">
+                    <div class="color-muestra" style="background-color: #2c3e50;"></div>
+                    <p><strong>#2c3e50</strong> - Azul oscuro</p>
+                    <p>Usado en header y textos principales</p>
+                </article>
+                
+                <article class="color-item">
+                    <div class="color-muestra" style="background-color: #3498db;"></div>
+                    <p><strong>#3498db</strong> - Azul brillante</p>
+                    <p>Enlaces, botones y elementos destacados</p>
+                </article>
+                
+                <article class="color-item">
+                    <div class="color-muestra" style="background-color: #16a085;"></div>
+                    <p><strong>#16a085</strong> - Verde turquesa</p>
+                    <p>Sección de contacto y llamadas a la acción</p>
+                </article>
+                
+                <article class="color-item">
+                    <div class="color-muestra" style="background-color: #f39c12;"></div>
+                    <p><strong>#f39c12</strong> - Naranja</p>
+                    <p>Elementos destacados y alertas</p>
+                </article>
+            </div>
+            
+            <p><strong>Justificación:</strong> Se eligió una paleta de colores profesionales y modernos y creativos. Los tonos azules aportan seriedad, mientras que los acentos naranjas y verdes añaden dinamismo.</p>
+            
+            <h3>3.2. Tipografías Seleccionadas</h3>
+
+            <div class="nota-importante">
+
+                <p><strong>Familia tipográfica principal:</strong></p>
+                <div class="codigo-ejemplo">
+
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                </div>
+                <p><strong>Razón:</strong> Segoe UI es una fuente moderna, legible y disponible en la mayoría de sistemas operativos. Las alternativas garantizan compatibilidad en cualquier dispositivo.</p>
+            </div>
+            
+            <h3>3.3. Estructura de Navegación</h3>
+
+            <p>Se implementó una <strong>navegación horizontal fija (sticky)</strong> que permanece visible al hacer scroll. Esto mejora la experiencia de usuario permitiendo acceder a cualquier sección en todo momento.</p>
+            
+            <p>Páginas del sitio:</p>
+
+            <ol>
+                <li><strong>index.html</strong> - Página de inicio con presentación personal y habilidades</li>
+                <li><strong>galeria.html</strong> - Galería de proyectos</li>
+                <li><strong>contacto.html</strong> - Formulario de contacto profesional completo</li>
+                <li><strong>documentacion.html</strong> - Documentación técnica del proyecto</li>
+            </ol>
+
+            
+            <h3>3.4. Distribución del Contenido</h3>
+
+            <p>Se utilizó una combinación de <strong>Flexbox</strong> para: header, footer, secciones de dos columnas y <strong>CSS Grid</strong> para disposiciones más complejas (galería de habilidades, tarjetas de contacto).</p>
+        </section>
+
+        
+        <!-- Sección 4: Proceso de Desarrollo -->
+
+        <section id="proceso-desarrollo">
+
+            <h2>4. Proceso de Desarrollo</h2>
+            
+            <h3>4.1. Fases Seguidas</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Fase</th>
+                        <th>Duración</th>
+                        <th>Actividades Realizadas</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Planificación</td>
+                        <td>1 día</td>
+                        <td>Elección de temática, creación visual, definición de estructura</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo HTML</td>
+                        <td>2 días</td>
+                        <td>Creación de las 4 páginas HTML con estructura semántica completa</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo CSS</td>
+                        <td>3 días</td>
+                        <td>Diseño visual, modelo de caja, layouts con Flexbox y Grid</td>
+                    </tr>
+                    <tr>
+                        <td>Refinamiento</td>
+                        <td>2 días</td>
+                        <td>Validación de código, corrección de errores, mejoras de usabilidad</td>
+                    </tr>
+                    <tr>
+                        <td>Documentación</td>
+                        <td>1 día</td>
+                        <td>Redacción de memoria técnica y preparación de presentación</td>
+                    </tr>
+                    <tr>
+                        <td>Presentación</td>
+                        <td>1 día</td>
+                        <td>Ensayo de defensa oral y preparación de materiales</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+            
+            <h3>4.2. Herramientas Utilizadas</h3>
+
+            <ul>
+                <li><strong>Editor de código:</strong> Visual Studio Code</li>
+                <li><strong>Navegadores de prueba:</strong> Google Chrome, Mozilla Firefox, Brave Browser</li>
+                <li><strong>Validadores:</strong> W3C HTML Validator y CSS Validator</li>
+                <li><strong>Control de versiones:</strong> Git y GitHub</li>
+            </ul>
+            
+            <h3>4.3. Tiempo Dedicado por Fase</h3>
+
+            <p>Total de horas invertidas: <strong>48 horas</strong></p>
+
+            <ul>
+                <li>Planificación: 8 horas</li>
+                <li>Desarrollo HTML: 10 horas</li>
+                <li>Desarrollo CSS: 12 horas</li>
+                <li>Refinamiento y testing: 12 horas</li>
+                <li>Documentación: 6 horas</li>
+            </ul>
+
+        </section>
+        
+        <!-- Sección 5: Dificultades y Soluciones -->
+
+        <section id="dificultades-soluciones">
+
+            <h2>5. Dificultades y Soluciones</h2>
+            
+            <article class="dificultad-item">
+
+                <h3>5.1. Dificultad: Diseño Responsive</h3>
+
+                <p><strong>Problema:</strong> Inicialmente, el diseño se rompía en pantallas pequeñas, especialmente la navegación y las tarjetas con Grid.</p>
+                <p><strong>Solución:</strong> Implementé media queries en CSS para adaptar el layout en dispositivos móviles. Cambié la navegación de horizontal a vertical y los grids de 3 columnas a 1 columna en pantallas menores de 768px.</p>
+                <div class="codigo-ejemplo">
+
+@media (max-width: 768px) {<br>
+&nbsp;&nbsp;.grid-habilidades {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br>
+&nbsp;&nbsp;}<br>
+}
+                </div>
+
+            </article>
+            
+            <article class="dificultad-item">
+
+                <h3>5.2. Dificultad: Centrado Vertical con Flexbox</h3>
+                <p><strong>Problema:</strong> Tuve problemas para centrar verticalmente elementos dentro de contenedores flexibles.</p>
+                <p><strong>Solución:</strong> Aprendí a combinar las propiedades justify-content y align-items correctamente. justify-content alinea en el eje principal y align-items en el eje cruzado.</p>
+            
+            </article>
+            
+            <article class="dificultad-item">
+
+                <h3>5.3. Dificultad: Validación de Formularios</h3>
+                <p><strong>Problema:</strong> Los atributos de validación HTML5 no funcionaban en todos los campos.</p>
+                <p><strong>Solución:</strong> Investigué en MDN Web Docs y añadí atributos específicos como pattern para validación de teléfonos, minlength/maxlength para textos, y required en campos obligatorios.</p>
+            
+            </article>
+            
+            <article class="dificultad-item">
+
+                <h3>5.4. Dificultad: Organización del Código CSS</h3>
+                <p><strong>Problema:</strong> El archivo CSS se volvió muy extenso.</p>
+                <p><strong>Solución:</strong> Organicé el código en secciones comentadas (Reset, Tipografía, Navegación, etc.) siguiendo una metodología lógica. Esto facilitó encontrar y modificar estilos específicos.</p>
+           
+            </article>
+        </section>
+
+        
+        <!-- Sección 6: Recursos Utilizados -->
+
+        <section id="recursos-utilizados">
+
+            <h2>6. Recursos Utilizados</h2>
+            
+            <h3>6.1. Páginas Web Consultadas</h3>
+
+            <ul>
+                <li><strong>MDN Web Docs:</strong> https://developer.mozilla.org/es/ - Documentación oficial de HTML y CSS</li>
+                <li><strong>W3Schools:</strong> https://www.w3schools.com/ - Tutoriales y ejemplos prácticos</li>
+                <li><strong>CSS-Tricks:</strong> https://css-tricks.com/ - Guías avanzadas de CSS</li>
+            </ul>
+
+        
+            
+            <h3>6.2. Fuentes de Imágenes</h3>
+
+            <p>Todas las imágenes utilizadas son de uso libre o creadas por el autor, obtenidas de:</p>
+            <ul>
+                <li><strong>Unsplash:</strong> https://unsplash.com/ - Fotografías de alta calidad</li>
+                <li><strong>Pexels:</strong> https://www.pexels.com/ - Imágenes libres de derechos</li>
+                <li><strong>Pixabay:</strong> https://pixabay.com/ - Recursos visuales gratuitos</li>
+            </ul>
+        </section>
+    
+        <!-- Sección 7: Estructura Técnica -->
+
+        <section id="estructura-tecnica">
+
+            <h2>7. Estructura Técnica del Proyecto</h2>
+            
+
+            <h3>7.1. Organización de Archivos</h3>
+
+            <div class="codigo-ejemplo">
+
+perez_carral_santiago/<br>
+│<br>
+├── index.html<br>
+├── galeria.html<br>
+├── contacto.html<br>
+├── documentacion.html<br>
+│<br>
+├── css/<br>
+│&nbsp;&nbsp;&nbsp;└── styles.css<br>
+│<br>
+├── img/<br>
+│&nbsp;&nbsp;&nbsp;├── perfil.jpg<br>
+│&nbsp;&nbsp;&nbsp;├── imagen01.png<br>
+│&nbsp;&nbsp;&nbsp;├── imagen02.png<br>
+│&nbsp;&nbsp;&nbsp;└── imagen03.png<br>
+│<br>
+└── diario_trabajo.pdf
+
+
+            </div>
+            
+            <h3>7.2. Elementos HTML5 Implementados</h3>
+
+            <table>
+                <thead>
+
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Uso en el Proyecto</th>
+                        <th>Página</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>Cabecera con logo y navegación</td>
+                        <td>Todas las páginas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>Menú de navegación principal</td>
+                        <td>Todas las páginas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>Contenedor principal del contenido</td>
+                        <td>Todas las páginas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>Divisiones temáticas del contenido</td>
+                        <td>Todas las páginas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>Tarjetas de habilidades y servicios</td>
+                        <td>index.html</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;aside&gt;</td>
+                        <td>Llamada a la acción</td>
+                        <td>index.html</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Pie de página con información de contacto</td>
+                        <td>Todas las páginas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>Formulario de contacto completo</td>
+                        <td>pagina3.html</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Tablas de estadísticas e información</td>
+                        <td>index.html, documentacion.html</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+            
+            <h3>7.3. Propiedades CSS Destacadas</h3>
+
+            <ul>
+                <li><strong>Flexbox:</strong> Usado en header, footer, secciones de dos columnas</li>
+                <li><strong>Grid:</strong> Implementado en galería de habilidades y tarjetas</li>
+                <li><strong>Transitions:</strong> Efectos suaves en hover de enlaces y botones</li>
+                <li><strong>Media Queries:</strong> Diseño responsive para móviles</li>
+                <li><strong>Box-shadow:</strong> Sombras en tarjetas y elementos destacados</li>
+            </ul>
+
+        </section>
+        
+        <!-- Sección 8: Validación -->
+
+        <section id="validacion">
+
+            <h2>8. Validación del Código</h2>
+            
+            <h3>8.1. Validación HTML</h3>
+
+            <div class="nota-importante">
+
+                <p>✅ <strong>Todas las páginas HTML han sido validadas con W3C HTML Validator</strong></p>
+
+                <p>URL: https://validator.w3.org/</p>
+
+                <p><strong>Resultado:</strong> 0 errores, 0 advertencias</p>
+            </div>
+            
+            <h3>8.2. Validación CSS</h3>
+
+            <div class="nota-importante">
+
+                <p>✅ <strong>La hoja de estilos ha sido validada con W3C CSS Validator</strong></p>
+                <p>URL: https://jigsaw.w3.org/css-validator/</p>
+                <p><strong>Resultado:</strong> 0 errores</p>
+            </div>
+
+            
+            <h3>8.3. Pruebas de Compatibilidad</h3>
+
+            <p>El sitio ha sido probado en:</p>
+
+            <ul>
+
+                <li>✅ Google Chrome (última versión)</li>
+                <li>✅ Mozilla Firefox (última versión)</li>
+                <li>✅ Microsoft Edge (última versión)</li>
+                <li>✅ Dispositivos móviles (responsive)</li>
+
+            </ul>
+
+        </section>
+        
+        <!-- Sección 9: Conclusiones -->
+
+        <section id="conclusiones">
+
+            <h2>9. Conclusiones</h2>
+            
+            <h3>9.1. Valoración Personal del Proyecto</h3>
+
+            <p>Este proyecto ha sido una experiencia muy enriquecedora que me ha permitido aplicar de forma práctica todos los conocimientos adquiridos sobre HTML5 y CSS3. He comprendido la importancia de una estructura semántica correcta y cómo el CSS puede transformar completamente la apariencia de un sitio web.</p>
+            
+            <p>También he valorado la importancia de escribir código limpio y comentado, algo fundamental para el trabajo profesional.</p>
+            
+            <h3>9.2. Aspectos que se Podrían Mejorar</h3>
+
+            <ol type="I">
+                
+                <li><strong>JavaScript:</strong> Añadir interactividad con animaciones y validaciones más complejas en el formulario</li>
+                <li><strong>Accesibilidad:</strong> Mejorar aún más el contraste de colores y añadir atributos ARIA</li>
+                <li><strong>Performance:</strong> Optimizar el tamaño de las imágenes para mejorar los tiempos de carga</li>
+                <li><strong>SEO:</strong> Implementar más etiquetas meta y datos estructurados</li>
+                <li><strong>Backend:</strong> Conectar el formulario a un servidor para enviar emails reales</li>
+           
+            </ol>
+            
+            <h3>9.3. Conocimientos Adquiridos</h3>
+
+            <p>Durante el desarrollo de este proyecto he aprendido:</p>
+
+            <ol type="I">
+
+                <li>A estructurar correctamente un documento HTML5 usando etiquetas semánticas</li>
+                <li>La importancia del modelo de caja en CSS y cómo afecta al layout</li>
+                <li>Técnicas modernas de diseño con Flexbox y Grid</li>
+                <li>Cómo crear formularios HTML completos con validación</li>
+                <li>La importancia de la validación del código y las pruebas en diferentes navegadores</li>
+                <li>A organizar un proyecto web de forma profesional con carpetas y archivos bien estructurados</li>
+                <li>El valor de documentar el trabajo realizado</li>
+            </ol>
+
+            
+            <h3>9.4. Reflexión Final</h3>
+
+            <p>Este proyecto me ha demostrado que el desarrollo web frontend requiere tanto conocimientos técnicos como creatividad y atención al detalle. Cada decisión de diseño tiene un propósito y afecta a la experiencia final del usuario. Estoy satisfecho con el resultado obtenido y motivado para seguir aprendiendo más tecnologías web como JavaScript, frameworks modernos y herramientas de preprocesamiento CSS.</p>
+        </section>
+
+        
+        <!-- Botón para volver al inicio -->
+
+        <aside class="caja-llamada-accion">
+
+            <h3>¿Quieres ver el proyecto en acción?</h3>
+
+            <p>Visita la página principal para navegar por el portfolio completo</p>
+
+            <a href="index.html" class="boton-primario">Volver al Inicio</a>
+        </aside>
+        
+    </main>
+    
+
+    <!-- ===========================
+         PIE DE PÁGINA
+    =========================== -->
+
+    <footer>
+
+        <div class="contenedor">
+
+            <div class="footer-contenido">
+
+                <div class="footer-seccion">
+                    <h4>Sobre Este Sitio</h4>
+                    <p>Portfolio personal desarrollado con HTML5 y CSS3 como parte del proyecto académico.</p>
+                </div>
+                
+                <div class="footer-seccion">
+
+                    <h4>Enlaces Rápidos</h4>
+
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+
+                </div>
+                
+                <div class="footer-seccion">
+
+                    <h4>Contacto</h4>
+                    <p>Email: sembei.normaki@slump.com</p>
+                    <p>Teléfono: +34 666 123 456</p>
+                    <p>Vigo, España</p>
+
+                </div>
+
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2025 Sembei Norimaki Portfolio. Todos los derechos reservados.</p>
+                <p>Desarrollado con HTML5 y CSS3</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

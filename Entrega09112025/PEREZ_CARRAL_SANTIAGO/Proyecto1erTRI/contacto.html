@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <!-- ===========================
+         METADATOS BÁSICOS
+    =========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto - Portfolio Juan García">
+    <meta name="keywords" content="contacto, formulario, email, mensaje">
+    <meta name="author" content="Santiago Pérez">
+    
+    <title>Contacto - Portfolio Sembei Norimaki</title>
+    
+    <!-- ===========================
+         ESTILOS CSS EXTERNOS
+    =========================== -->
+
+    <link rel="stylesheet" href="css/mystyles.css">
+
+    <style>
+        /* ===========================
+        MENSAJE DE CONFIRMACIÓN FORMULARIO (SIN JS)
+        =========================== */
+
+        .mensaje-exito {
+            display: none;
+            background-color: #d4edda;
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .mensaje-exito:target {
+            display: block;
+            animation: aparecer 0.5s ease;
+        }
+
+        .mensaje-exito h3 {
+            color: #155724;
+            margin-bottom: 10px;
+        }
+
+        .mensaje-exito p {
+            margin-bottom: 5px;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+    
+
+</head>
+
+<body>
+    
+    <!-- ===========================
+         CABECERA DE LA PÁGINA
+    =========================== -->
+
+    <header>
+
+        <div class="contenedor">
+
+            <h2 class="logo">SN Portfolio</h2>
+            
+    <!-- ===========================
+        NAVEGACIÓN PRINCIPAL
+    =========================== -->
+
+            <nav>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html" class="activo">Contacto</a></li>
+                    <li><a href="https://github.com/f0r60/RepoProyectoLLMM.git" target="_blank">GitHub</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+    
+
+    <!-- ===========================
+         SECCIÓN HERO
+    =========================== -->
+
+    <section class="hero-contacto">
+
+        <h1>Contacta Conmigo</h1>
+        <p>¿Tienes un proyecto en mente? Me encantaría escucharlo</p>
+    </section>
+
+    
+    <!-- ===========================
+         CONTENIDO PRINCIPAL
+    =========================== -->
+
+    <main class="contenedor">
+        
+        <!-- Sección Introducción -->
+
+        <section id="intro-contacto">
+
+            <h2>Hablemos de tu Proyecto</h2>
+            
+            <div class="info-importante">
+
+                <p><strong>Estoy disponible para:</strong></p>
+
+                <ul>
+                    <li>Desarrollo de sitios web personalizados</li>
+                    <li>Consultoría en diseño web</li>
+                    <li>Mantenimiento y actualización de sitios existentes</li>
+                </ul>
+            </div>
+
+            
+            <p>Completa el formulario a continuación y me pondré en contacto contigo lo antes posible. Todos los campos marcados con <span style="color: red;">*</span> son obligatorios.</p>
+        </section>
+
+        
+    <!-- ===========================
+            SECCIÓN FORMULARIO
+    =========================== -->
+
+        <section id="formulario-contacto">
+
+            <h2>Formulario de Contacto</h2>
+
+            <!-- Mensaje de éxito -->
+
+            <div id="mensajeExito" class="mensaje-exito">
+                <h3>✅ ¡Mensaje enviado correctamente!</h3>
+                <p>Gracias por contactarme. Te responderé lo antes posible.</p>
+                <p><a href="#contacto" style="color: #155724; text-decoration: underline;">Cerrar mensaje</a></p>
+            </div>
+
+
+            <!-- Formulario principal -->
+
+            <form action="#mensajeExito" method="get" class="formulario">
+                
+                <!-- Campo Nombre -->
+
+                <div class="campo-formulario">
+
+                    <label for="nombre">Nombre completo: <span class="obligatorio">*</span></label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        placeholder="Ej: María González" 
+                        required
+                        minlength="3"
+                        maxlength="50">
+
+                </div>
+                
+                <!-- Campo Email -->
+
+                <div class="campo-formulario">
+
+                    <label for="email">Correo electrónico: <span class="obligatorio">*</span></label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="tu.email@ejemplo.com" 
+                        required>
+
+                </div>
+                
+                <!-- Campo Teléfono -->
+
+                <div class="campo-formulario">
+
+                    <label for="telefono">Teléfono:</label>
+                    <input 
+                        type="tel" 
+                        id="telefono" 
+                        name="telefono" 
+                        placeholder="+34 600 123 456"
+                        pattern="[+]?[0-9\s\-]+">
+                </div>
+                
+                <!-- Campo Tipo de Proyecto -->
+
+                <div class="campo-formulario">
+
+                    <label for="tipo-proyecto">Tipo de proyecto: <span class="obligatorio">*</span></label>
+                    <select id="tipo-proyecto" name="tipo-proyecto" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="web-nueva">Sitio web nuevo</option>
+                        <option value="web-rediseno">Rediseño de sitio existente</option>
+                        <option value="consultoria">Consultoría</option>
+                        <option value="mantenimiento">Mantenimiento web</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                </div>
+                
+                <!-- Campo Presupuesto -->
+
+                <div class="campo-formulario">
+
+                    <label>Presupuesto estimado:</label>
+                    <div class="grupo-radio">
+                        <input type="radio" id="presupuesto-bajo" name="presupuesto" value="500-1000">
+                        <label for="presupuesto-bajo">500€ - 1.000€</label>
+                    </div>
+                    <div class="grupo-radio">
+                        <input type="radio" id="presupuesto-medio" name="presupuesto" value="1000-3000">
+                        <label for="presupuesto-medio">1.000€ - 3.000€</label>
+                    </div>
+                    <div class="grupo-radio">
+                        <input type="radio" id="presupuesto-alto" name="presupuesto" value="3000+">
+                        <label for="presupuesto-alto">Más de 3.000€</label>
+                    </div>
+                    <div class="grupo-radio">
+                        <input type="radio" id="presupuesto-flexible" name="presupuesto" value="flexible" checked>
+                        <label for="presupuesto-flexible">Por determinar</label>
+                    </div>
+
+                </div>
+                
+                <!-- Campo Fecha deseada -->
+
+                <div class="campo-formulario">
+
+                    <label for="fecha">Fecha deseada de inicio:</label>
+                    <input 
+                        type="date" 
+                        id="fecha" 
+                        name="fecha"
+                        min="2025-01-01">
+
+                </div>
+                
+                <!-- Campo Urgencia -->
+
+                <div class="campo-formulario">
+
+                    <label for="urgencia">Nivel de urgencia:</label>
+                    <input 
+                        type="range" 
+                        id="urgencia" 
+                        name="urgencia" 
+                        min="1" 
+                        max="5" 
+                        value="3"
+                        oninput="document.getElementById('urgencia-valor').textContent = this.value">
+                    <span id="urgencia-valor">3</span> / 5
+
+                </div>
+                
+                <!-- Campo Mensaje -->
+
+                <div class="campo-formulario">
+
+                    <label for="mensaje">Cuéntame sobre tu proyecto: <span class="obligatorio">*</span></label>
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        rows="8" 
+                        placeholder="Describe tu proyecto, objetivos, plazos y cualquier detalle relevante..."
+                        required
+                        minlength="20"
+                        maxlength="1000"></textarea>
+                    <small>Mínimo 20 caracteres, máximo 1000</small>
+
+                </div>
+                
+
+                <!-- Campo Archivo -->
+
+                <div class="campo-formulario">
+
+                    <label for="archivo">Adjuntar archivo (opcional):</label>
+                    <input 
+                        type="file" 
+                        id="archivo" 
+                        name="archivo"
+                        accept=".pdf,.doc,.docx,.jpg,.png">
+                    <small>Formatos permitidos: PDF, DOC, DOCX, JPG, PNG (máx. 5MB)</small>
+
+                </div>
+                
+                <!-- Checkboxes de Servicios Adicionales -->
+
+                <div class="campo-formulario">
+
+                    <label>Servicios adicionales de interés:</label>
+
+                    <div class="grupo-checkbox">
+                        <input type="checkbox" id="servicio-seo" name="servicios" value="seo">
+                        <label for="servicio-seo">Optimización SEO</label>
+                    </div>
+
+                    <div class="grupo-checkbox">
+                        <input type="checkbox" id="servicio-mantenimiento" name="servicios" value="mantenimiento">
+                        <label for="servicio-mantenimiento">Mantenimiento mensual</label>
+                    </div>
+
+                    <div class="grupo-checkbox">
+                        <input type="checkbox" id="servicio-hosting" name="servicios" value="hosting">
+                        <label for="servicio-hosting">Hosting y dominio</label>
+                    </div>
+
+                    <div class="grupo-checkbox">
+                        <input type="checkbox" id="servicio-formacion" name="servicios" value="formacion">
+                        <label for="servicio-formacion">Formación en gestión del sitio</label>
+                    </div>
+
+                </div>
+                
+                <!-- Campo Newsletter -->
+
+                <div class="campo-formulario">
+
+                    <div class="grupo-checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="si">
+                        <label for="newsletter">Deseo recibir novedades y consejos sobre diseño web</label>
+                    </div>
+
+                </div>
+                
+                <!-- Campo Privacidad -->
+
+                <div class="campo-formulario">
+
+                    <div class="grupo-checkbox">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">He leído y acepto la <a href="#" target="_blank">política de privacidad</a> <span class="obligatorio">*</span></label>
+                    </div>
+
+                </div>
+                               
+                <!-- Botones del formulario -->
+
+                <div class="botones-formulario">
+
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                    <button type="reset" class="boton-reset">Limpiar Formulario</button>
+                </div>
+
+                
+            </form>
+            
+            <div class="tiempo-respuesta">
+                <p><strong>⏱️ Tiempo de respuesta:</strong> Normalmente respondo en menos de 24 horas laborables.</p>
+            </div>
+            
+        </section>
+
+        
+    <!-- ===========================
+        INFORMACIÓN DE CONTACTO ALTERNATIVA
+    =========================== -->
+
+        <section id="info-contacto-alternativa">
+
+            <h2>Otras Formas de Contacto</h2>
+            
+            <div class="grid-contacto">
+
+                <article class="tarjeta-contacto">
+
+                    <h3>📧 Email Directo</h3>
+                    <p><a href="mailto:sembei.norimaki@email.com">sembei.norimaki@email.com</a></p>
+                    <p>Para consultas rápidas o envío de archivos pesados</p>
+
+                </article>
+                
+                <article class="tarjeta-contacto">
+
+                    <h3>📱 Teléfono</h3>
+                    <p><a href="tel:+34666123456">+34 666 123 456</a></p>
+                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+
+                </article>
+                
+                <article class="tarjeta-contacto">
+
+                    <h3>📍 Ubicación</h3>
+                    <p>Vigo, España</p>
+                    <p>Disponible para reuniones presenciales o videollamadas</p>
+
+                </article>
+            </div>
+
+        </section>
+        
+    <!-- ===========================
+        PREGUNTAS FRECUENTES
+    =========================== -->
+
+        <section id="faq">
+
+            <h2>Preguntas Frecuentes</h2>
+            
+            <article class="pregunta-faq">
+                <h3>¿Cuánto tiempo tardan los proyectos web?</h3>
+                <p>Depende de la complejidad. Un sitio básico de 3-5 páginas puede estar listo en 2-3 semanas. Proyectos más complejos pueden requerir 1-2 meses.</p>
+            </article>
+            
+            <article class="pregunta-faq">
+                <h3>¿Ofrecen servicios de mantenimiento?</h3>
+                <p>Sí, ofrezco planes de mantenimiento mensual que incluyen actualizaciones de contenido, copias de seguridad y soporte técnico.</p>
+            </article>
+            
+            <article class="pregunta-faq">
+                <h3>¿Trabajan con clientes fuera de Vigo</h3>
+                <p>Por supuesto. Trabajo con clientes de toda España y también internacionalmente mediante videollamadas y herramientas de colaboración online.</p>
+            </article>
+
+        </section>
+        
+    </main>
+    
+    <!-- ===========================
+         PIE DE PÁGINA
+    =========================== -->
+
+    <footer>
+
+        <div class="contenedor">
+
+            <div class="footer-contenido">
+
+                <div class="footer-seccion">
+                    <h4>Sobre Este Sitio</h4>
+                    <p>Portfolio personal desarrollado con HTML5 y CSS3 como parte del proyecto académico.</p>
+                </div>
+                
+                <div class="footer-seccion">
+
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pagina2.html">Galería</a></li>
+                        <li><a href="pagina3.html">Contacto</a></li>
+                    </ul>
+
+                </div>
+                
+                <div class="footer-seccion">
+
+                    <h4>Contacto</h4>
+                    <p>Email: sembei.norimaki@email.com</p>
+                    <p>Teléfono: +34 666 123 456</p>
+                    <p>Vigo, España</p>
+
+                </div>
+
+            </div>
+            
+            <div class="footer-copyright">
+
+                <p>&copy; 2025 Sembei Norimaki Portfolio. Todos los derechos reservados.</p>
+                <p>Desarrollado con HTML5 y CSS3</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+</body>
+
+</html>

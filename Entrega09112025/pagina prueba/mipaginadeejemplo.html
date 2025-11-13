@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyles.css">
+    <title>Mi página de ejemplo</title>
+  </head>
+
+
+  <body>
+    <!--ENCABEZADO PRINCIPAL-->
+    
+    <header>
+
+      <div id="titulo">
+        <h1>Mi Página de ejemplo</h1>
+        <p>Aprendiendo etiquetas semánticas</p>
+      </div>
+
+    </header>
+
+    <!--NAVEGACIÓN PRINCIPAL-->
+    
+    <nav>
+
+      <ul id="ulNav">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#tutoriales">Tutoriales</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+    </nav>
+
+    <!--CONTENIDO PRINICIPAL: MAIN-->
+    
+    <div class="contenedor">
+    
+      <main>
+
+        <section id="noticias">
+          <h2>Noticias recientes</h2>
+
+          <article id="noticia1">
+            <h3>Nuevas características de HTML6</h3>
+            <p>El comité de desarrollo web ha anunciado nuevas características para HTML6 que prometen revolucionar la forma en que construimos sitios web.</p>
+          </article>
+
+          <article id="noticia2">
+            <h3>Tutorial sobre etiquetas semánticas</h3>
+            <p>Descubre cómo usar correctamente las etiquetas semánticas para mejorar la accesibilidad y SEO de tus páginas web.</p>
+          </article>
+
+        </section>
+
+        <section id="tutoriales">
+
+          <h2>Tutoriales</h2>
+
+          <article id="art1">
+            <h3>Cómo usar &lt;header&gt;, &lt;footer&gt; y &lt;nav&gt;</h3>
+            <p>Explicación detallada con ejemplos prácticos para estructurar la cabecera, pie de página y navegación de tu sitio.</p>
+          </article>
+
+          <article id="art2">
+            <h3>Uso de &lt;aside&gt; y &lt;section&gt;</h3>
+            <p>Aprende a organizar contenido relacionado pero independiente usando las etiquetas aside y section.</p>
+          </article>
+
+        </section>
+
+      </main>
+
+      <!--CONTENIDO LATERAL: ASIDE + BOX-FORMULARIO-->
+
+      <div class="contenedor-lateral">
+
+        <aside>
+
+          <h3>Información adicional</h3>
+          <p>Este contenido está separado del principal pero ofrece enlaces y datos interesantes relacionados.</p>
+          
+          <ul id="ulAsd">
+
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/header" 
+                target="_blank">MDN: &lt;header&gt;</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/aside"
+                target="_blank">MDN: &lt;aside&gt;</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/footer"
+                target="_blank">MDN: &lt;footer&gt;</a>
+            </li>
+
+          </ul>
+
+        </aside>
+
+        <!--BOX-FORMULARIO-->
+
+        <div class="box-formulario" >
+
+          <h3>Formulario de contacto</h3>
+          <p>Rellene con sus datos el siguiente formulario y nos pondremos en contacto lo antes posible</p>
+          
+
+          <form action="/formulario contacto" method="POST">
+    
+            <div id="contacto">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre_usuario" name="nombre" required>
+            </div>
+            <div>
+              <label for="correo">Correo electónico:</label>
+              <input type="text" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="género">Género:</label>
+              <select id="genero_usuario" name="genero">
+                <option value="" disabled selected> Seleccionar </option>
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div><!--Cierre -->	
+            <div>
+          
+            <label for="mensaje">Mensaje:</label><br>
+          
+            <textarea
+              id="mensaje_usuario"
+              name="mensaje"
+              rows="6"
+              cols="50"
+              placeholder="Escriba aquí su mensaje..."
+            ></textarea>
+          
+            </div>
+        
+            <div>
+              <input type="submit" value="Enviar">
+            </div>
+    
+          </form>
+
+        </div> <!--CIERRE "BOX-FORMULARIO"-->
+
+
+        <div class="box-imagen">
+
+          <img src="imagen.png" alt="fotica">
+
+
+        </div>
+
+
+    
+      </div><!--CIERRE CONTENEDOR-LATERAL-->
+
+
+    </div><!--CIERRE CONTENEDOR-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--PIE DE PÁGINA-->
+    <footer>
+
+      <p>&copy; 2025 Mi Página de Ejemplo. Todos los derechos reservados.</p>
+    
+    </footer>
+  
+  </body>
+
+</html>
